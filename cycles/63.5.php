@@ -11,7 +11,8 @@
     $arr_fin = [];
 
     foreach($arr as $key => $elem){
-        if($elem < 300){
+        $str = (string)$elem;
+        if($str[0] == '1' or $str[0] == '2'){
         $arr_fin[] = $elem;
         }
     }
